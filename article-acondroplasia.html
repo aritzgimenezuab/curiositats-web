@@ -1,15 +1,147 @@
-<!-- Targeta Article Acondroplàsia -->
-<a href="article-acondroplasia.html" class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition block">
-    <div class="flex items-center space-x-2 text-xs font-semibold mb-3">
-        <span class="bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full">Salut i Genètica</span>
-        <span class="text-slate-400">•</span>
-        <span class="text-slate-500">Lectura de 12 min</span>
-    </div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2 hover:text-indigo-600 transition">
-        Acondroplàsia: Més enllà de la baixa estatura, una mirada profunda a la condició genètica
-    </h3>
-    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-        Descobreix l'origen molecular al gen FGFR3, l'herència genètica, la història des de l'Antic Egipte fins als tractaments actuals.
-    </p>
-    <span class="text-indigo-600 font-semibold text-sm">Llegir article complet &rarr;</span>
-</a>
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acondroplàsia: Genètica, Orígens, Fisiologia i Realitat Social | CuriositatsLab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media print {
+            body { background-color: white !important; }
+            .no-print { display: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 no-print">
+        <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-black text-indigo-600">💡 CuriositatsLab</a>
+            <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-indigo-600 transition">&larr; Tornar a l'inici</a>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 py-10 flex-grow">
+        <article class="bg-white rounded-2xl border border-slate-200 p-8 md:p-12 shadow-sm space-y-8">
+            
+            <div class="border-b border-slate-100 pb-6">
+                <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full uppercase tracking-wider">Salut i Genètica</span>
+                <h1 class="text-3xl md:text-4xl font-black text-slate-900 mt-4 mb-3 leading-tight">
+                    Acondroplàsia: Més enllà de la baixa estatura, una mirada profunda a la condició genètica
+                </h1>
+                <p class="text-xs text-slate-400">Publicat a la secció de Salut i Biologia • Lectura avançada (12 minuts)</p>
+            </div>
+
+            <section class="space-y-4">
+                <p class="text-slate-700 text-base leading-relaxed font-medium">
+                    L'acondroplàsia és la forma més freqüent de displàsia esquelètica que condueix a una condició de nanisme de tipus rizomèlic. Lluny de ser simplement una qüestió d'estatura, es tracta d'una complexa alteració genètica que afecta el desenvolupament i la transformació del cartílag en os durant el creixement embrionari i infantil.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Aquest article pretén explorar amb rigor científic i humanístic què és exactament l'acondroplàsia, quins mecanismes moleculars la provoquen, la seva història al llarg dels segles, els aspectes mèdics associats i la realitat social i cultural de les persones que hi conviuen.
+                </p>
+            </section>
+
+            <section class="space-y-4 pt-4 border-t border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="text-indigo-600">1.</span> Què és i com es manifesta físicament?
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    El terme "acondroplàsia" prové del grec antic i significa literalment <em>"sense formació de cartílag"</em> (de <em>a-</em> [sense], <em>chondros</em> [cartílag] i <em>plasis</em> [formació]). Malgrat el nom, el cartílag sí que es forma, però el procés d'ossificació endocondral —el mecanisme pel qual el model de cartílag es converteix en os durant el creixement— està greument alterat.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Les característiques físiques més distintives inclouen:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-slate-600 text-sm">
+                    <li><strong>Estatura final adulta:</strong> Sol situar-se al voltant dels 1,20 a 1,35 metres, depenent del gènere i factors individuals.</li>
+                    <li><strong>Escurçament rizomèlic:</strong> Els ossos proximals de les extremitats (el fèmer a les cames i l'húmer als braços) són desproporcionadament més curts en comparació amb els ossos distals i el tronc, que manté una longitud gairebé normal.</li>
+                    <li><strong>Rasges facials i cranials:</strong> Macrocèfala (cap de mida gran), front prominent (glaul·la frontal), pont nasal deprimit o aplatat, i una mandíbula lleugerament projectada cap endavant.</li>
+                    <li><strong>Columnes i mans:</strong> Es pot observar una lleugera curvatura lumbar (lordosi) i les mans solen adoptar una forma característica en "trident" (amb separació entre el dit anular i el cor).</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4 pt-4 border-t border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="text-indigo-600">2.</span> Origen i causa molecular: El gen FGFR3
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    A nivell molecular, l'acondroplàsia està causada per una mutació puntual en el gen <strong>FGFR3</strong> (Receptor del Factor de Creixement de Fibroblasts 3), situat en el cromosoma 4 humà. 
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Normalment, la proteïna FGFR3 actua com un regulador negatiu del creixement ossi; és a dir, s'encarrega d'frenar la proliferació excessiva de cèl·lules de cartílag (condròcits) a les plaques de creixement dels ossos llargs. En una persona amb acondroplàsia, la mutació fa que aquest receptor estigui <strong>constantment hiperactiu</strong>, enviant un senyal ininterromput de "frenada" al creixement ossi. Això provoca que les plaques de creixement es tanquin de manera prematura.
+                </p>
+                
+                <div class="bg-slate-50 border-l-4 border-indigo-600 p-4 rounded-r-xl my-4">
+                    <h3 class="font-bold text-slate-900 text-sm mb-1">Herència i mutacions espontànies (De Novo)</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Un fet fascinant i poc conegut és que <strong>més del 80% dels casos d'acondroplàsia es deuen a una mutació espontània (<em>de novo</em>)</strong> durant la formació dels gàmetes (espermatozous o òvuls) de pares amb estatura mitjana. Això significa que la gran majoria de persones amb acondroplàsia neixen de pares sense aquesta condició. Quan un dels progenitors té acondroplàsia, hi ha una probabilitat del 50% de transmetre-la en cada gestació (patró d'herència autosòmic dominant).
+                    </p>
+                </div>
+            </section>
+
+            <section class="space-y-4 pt-4 border-t border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="text-indigo-600">3.</span> Salut integral, atenció mèdica i complicacions comunes
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    L'acondroplàsia no és una malaltia degenerativa ni afecta la capacitat intel·lectual —que es desenvolupa amb total normalitat—, però sí que requereix un seguiment pediàtric i mèdic especialitzat per prevenir i tractar certes complicacions anatòmiques derivades del creixement desproporcionat:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-slate-600 text-sm">
+                    <li><strong>Compressió medul·lar cervical:</strong> Degut a la mida reduïda del forat magre (l'obertura a la base del crani), pot haver-hi compressió de la medul·la espinal superior durant els primers anys de vida, requerint controls neurològics estrictes.</li>
+                    <li><strong>Apnea del suen:</strong> L'obstrucció de les vies respiratòries altes (degut a la morfologia de la cara i les amígdales grans) és comuna i s'ha de vigilar.</li>
+                    <li><strong>Infeccions d'oïda (Otitis mitjana):</strong> La disposició de les trompes d'Eustaqui afavoreix la retenció de líquid a l'oïda mitjana, la qual cosa pot afectar la audició si no es tracta a temps.</li>
+                    <li><strong>Problemes ortopèdics:</strong> Són freqüents les cames lleugerament arquejades (genu varum) i el dolor lumbar crònic a l'edat adulta a causa de la curvatura lumbar.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4 pt-4 border-t border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                    <span class="text-indigo-600">4.</span> Curiositats, història i presència en la cultura
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    La història de l'acondroplàsia està profundament imbricada amb la història de la civilització humana:
+                </p>
+                <div class="space-y-3">
+                    <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">🏛️ Antic Egipte i divinitat</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            A l'Antic Egipte, les persones amb acondroplàsia eren sovint respectades i ocupaven alts càrrecs administratius, religiosos o de cort (com el déu nan Ptah o personatges com el cortesà Seneb), ja que se'ls atribuïa una connexió especial amb el diví i no eren marginats.
+                        </p>
+                    </div>
+                    <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">🎨 L'art i la pintura barroca</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Pintors mestres com Diego Velázquez van retratar amb gran dignitat i humanitat persones amb acondroplàsia que formaven part de la cort de Felip IV (com en el cas de <em>Don Sebastián de Morra</em> o <em>El niño de Vallecas</em>), allunyant-se en molts aspectes de la caricatura circense d'èpoques posteriors.
+                        </p>
+                    </div>
+                    <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">🧬 Avenços farmacèutics recents</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            En els darrers anys s'han aprovat fàrmacs innovadors (com el vosoritide) dissenyats específicament per contrarestar l'efecte hiperactiu del receptor FGFR3, obrint noves vies terapèutiques per millorar el creixement i la qualitat de vida dels infants afectats.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-4 pt-4 border-t border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-900">Conclusió i inclusió social</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    L'acondroplàsia demostra la immensa diversitat genètica de l'espècie humana. Més enllà dels reptes mèdics i físics que comporta, el principal obstacle al qual s'enfronten les persones amb aquesta condició no prové de la biologia, sinó de les barreres arquitectòniques i socials d'un món dissenyat sota estàndards homogenis. 
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed font-medium">
+                    Conèixer a fons la seva genètica, respectar la seva dignitat i eliminar estereotips és el camí fonamental cap a una societat plenament inclusiva i accessible per a tothom.
+                </p>
+            </section>
+
+            <div class="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between no-print">
+                <a href="index.html" class="text-indigo-600 font-semibold text-sm hover:underline">&larr; Tornar al llistat principal</a>
+                <button onclick="window.print()" class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-xs font-semibold hover:bg-indigo-700 transition">Imprimir o Guardar PDF</button>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500 no-print">
+        <p>&copy; 2026 CuriositatsLab. Tots els drets reservats.</p>
+    </footer>
+</body>
+</html>
